@@ -1,0 +1,26 @@
+{
+  "name": "testing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "bulma-start": "0.0.2",
+    "d3": "^5.5.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "rc-spider": "0.0.8",
+    "react": "^16.4.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-d3-tree": "^1.10.6",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "storm-react-diagrams": "^5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
