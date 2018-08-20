@@ -661,7 +661,7 @@ module.exports = {
             "notes" : "suggested depth for treeAggregate (>=2)"
           },
           {
-            "name" : "loss", // belom
+            "name" : "loss",
             "type" : "str",
             "default": "squaredError",
             "value" : null,
@@ -669,7 +669,7 @@ module.exports = {
             "notes" : "The loss function to be optimized. Supported options: squaredError, huber"
           }, 
           {
-            "name" : "epsilon", // belom
+            "name" : "epsilon",
             "type" : "float",
             "default": 1.35,
             "value" : null,
@@ -1077,7 +1077,7 @@ module.exports = {
             "notes" : " E.g. 10 means that the cache will get checkpointed every 10 iterations. Note: this setting will be ignored if the checkpoint directory is not set in the SparkContext	"
           },
           {
-            "name" : "lossType", // belom
+            "name" : "lossType",
             "type" : "str",
             "default": "squared",
             "value" : null,
