@@ -429,7 +429,7 @@ module.exports = {
         "name" : "multilayerPerceptronParams",
         "params" :
           [{
-            "name" : "layers", // belom
+            "name" : "layers",
             "type" : "list",
             "options" : "",
             "default" : [2, 3, 4],
@@ -445,7 +445,7 @@ module.exports = {
             "notes" : ""
           },
           {
-            "name" : "steps", // belom
+            "name" : "steps",
             "type" : "int",
             "options" : "",
             "default" : 0.01,
@@ -469,7 +469,7 @@ module.exports = {
             "notes" : ""
           }, 
           {
-            "name" : "paramGrids",  // belom
+            "name" : "paramGrids",
             "type" : "list",
             "options" : "",
             "default" : null,
@@ -565,7 +565,7 @@ module.exports = {
             "notes" : "the convergence tolerance for iterative algorithms (>= 0)"
           },	
           {
-            "name" : "quantileProbabilities", // belom
+            "name" : "quantileProbabilities",
             "type" : "list",
             "default": [0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99],
             "value" : null,

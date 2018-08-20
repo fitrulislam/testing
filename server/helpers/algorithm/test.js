@@ -89,9 +89,9 @@ module.exports = {
                 "display_name": "Maximum Iteration",
                 "description": "max number of iterations (>= 0).",
                 "datatype": "int",
-                "value": 100,
+                // "value": ['kampret 1', 'kampret 2', 'kampret 3'],
+                "value": [2, 3, 4],
                 "mandatory": true,
-                "options": ['test', 'test2', 'test3']
             },
             {
                 "name": "loss",
