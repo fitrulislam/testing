@@ -82,7 +82,7 @@ module.exports = {
   check: (req, res) => {
     try {
       res.status(200).json({
-        message: 'not done'
+        message: 'done'
       })
     } catch (error) {
       res.status(500).json({
