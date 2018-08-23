@@ -1,7 +1,7 @@
 const Algorithm = require('../models/algo');
 const { MachineLearning } = require('../helpers/algorithm/machineLearning');
 const { Transformator } = require('../helpers/algorithm/transformator');
-const { test } = require('../helpers/algorithm/test');
+const { test, model, dataset, output } = require('../helpers/algorithm/test');
 
 module.exports = {
   algorithm: async (req, res) => {
@@ -42,9 +42,10 @@ module.exports = {
     try {
       res.status(200).json({
         message: 'all algo data',
-        machineLearning: MachineLearning,
-        transformator: Transformator,
-        test: test
+        output,
+        dataset,
+        test,
+        model
       })
     } catch (error) {
       res.status(500).json({
