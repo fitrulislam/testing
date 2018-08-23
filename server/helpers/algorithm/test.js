@@ -135,12 +135,21 @@ module.exports = {
     {
       "name": "dataset1",
       "display_name": "Dataset 1",
+      "path": "hdfs/...",
       "params": [
         {
           "name": "property1",
           "display_name": "Property 1",
           "description": "",
           "value": ""
+        }
+      ],
+      "columns": [
+        {
+          "name": "availableColumns",
+          "display_name": "Available Columns",
+          "description": "",
+          "value": ["Weather", "Temperature", "Humidity"]
         }
       ]
     },
@@ -153,6 +162,14 @@ module.exports = {
           "display_name": "Property 1",
           "description": "",
           "value": ""
+        }
+      ],
+      "columns": [
+        {
+          "name": "availableColumns",
+          "display_name": "Available Columns",
+          "description": "",
+          "value": ["Weight", "Height", "Size"]
         }
       ]
     }
