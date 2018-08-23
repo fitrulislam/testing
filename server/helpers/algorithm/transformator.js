@@ -5,7 +5,7 @@ module.exports = {
         "name" : "MinMaxScaler",
         "params" :
           [{
-            "name" : "min",
+            "name" : "min", // belom
             "type" : "float",
             "default" : 0.0,
             "value" : null,
@@ -13,7 +13,7 @@ module.exports = {
             "notes" : "minimum value"
           },
           {
-            "name" : "max",
+            "name" : "max", // belom
             "type" : "float",
             "default": 1.0,
             "value" : null,

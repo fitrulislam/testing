@@ -2,7 +2,7 @@ module.exports = {
   MachineLearning: 
     [
       { 
-        "name" : "logisticReg",
+        "name" : "logisticReg", // done!
         "params" : 
           [{
             "name":"maxIter",
@@ -98,7 +98,7 @@ module.exports = {
         "after" : []
       },
       {
-        "name" : "decisionTreeClassifier",
+        "name" : "decisionTreeClassifier", // done!
         "params" : 
           [{
             "name" : "maxDepth",
@@ -245,21 +245,21 @@ module.exports = {
             "value" : null,
             "notes" : ""
           },{
-            "name" : "numTrees", 
+            "name" : "numTrees",
             "type" : "int",
             "options" : "",
             "default": 20,
             "value" : null,
             "notes" : ""
           },{
-            "name" : "featureSubsetStrategy", 
+            "name" : "featureSubsetStrategy",
             "type" : "str",
             "options" : "",
             "default": "auto",
             "value" : null,
             "notes" : ""
           },{
-            "name" : "subSamplingRate", 
+            "name" : "subSamplingRate", // belom
             "type" : "float",
             "options" : "",
             "default": 1.0,
@@ -366,7 +366,7 @@ module.exports = {
             "value" : null,
             "notes" : ""
           },{
-            "name" : "subsamplingRate",
+            "name" : "subsamplingRate", // belom
             "type" : "float",
             "options" : "",
             "default" : 1.0,
@@ -386,7 +386,7 @@ module.exports = {
         "after" : []
       },
       {
-        "name" : "naiveBayesClassifier",
+        "name" : "naiveBayesClassifier", // done!
         "params" :
           [{
             "name" : "smoothing",
@@ -461,7 +461,7 @@ module.exports = {
         "name" : "CrossValidation", 
         "params" :
           [{
-            "name" : "numFolds", 
+            "name" : "numFolds", // belom
             "type" : "int",
             "options" : "",
             "numFolds" : 3,
@@ -469,7 +469,7 @@ module.exports = {
             "notes" : ""
           }, 
           {
-            "name" : "paramGrids", 
+            "name" : "paramGrids",
             "type" : "list",
             "options" : "",
             "default" : null,
@@ -637,7 +637,7 @@ module.exports = {
             "notes" : "whether to standardize the training features before fitting the model."
           },
           {
-            "name" : "solver",
+            "name" : "solver", // belom
             "type" : "str",
             "default": "auto",
             "value" : null,
@@ -813,7 +813,7 @@ module.exports = {
             "notes" : "If false, the algorithm will pass trees to executors to match instances with nodes. If true, the algorithm will cache node IDs for each instance. Caching can speed up training of deeper trees. Users can set how often should the cache be checkpointed or disable it by setting checkpointInterval"
           }, 
           {
-            "name" : "checkpointerval",
+            "name" : "checkPointInterval",
             "type" : "int",
             "default": 10,
             "value" : null,
@@ -925,7 +925,7 @@ module.exports = {
             "notes" : "If false, the algorithm will pass trees to executors to match instances with nodes. If true, the algorithm will cache node IDs for each instance. Caching can speed up training of deeper trees. Users can set how often should the cache be checkpointed or disable it by setting checkpointInterval."
           }, 
           {
-            "name" : "checkpoInterval",
+            "name" : "checkPointInterval",
             "type" : "int",
             "default": 10,
             "value" : null,
@@ -965,7 +965,7 @@ module.exports = {
             "notes" : "Number of trees to train (>= 1)."
           },
           {
-            "name" : "featureSubsetstrategy",
+            "name" : "featureSubsetstrategy", // belom
             "type" : "str",
             "default": "auto",
             "value" : null,
@@ -1069,7 +1069,7 @@ module.exports = {
             "notes" : "Fraction of the training data used for learning each decision tree, in range (0, 1]	"
           },
           {
-            "name" : "checkpoInterval",
+            "name" : "checkPointInterval",
             "type" : "int",
             "default": 10,
             "value" : null,
@@ -1141,7 +1141,7 @@ module.exports = {
             "notes" : "maximum number of iterations"
           },
           {
-            "name" : "minDivisibleClusterSize",
+            "name" : "minDivisibleClusterSize", // tanya lagi
             "type" : "float",
             "default": 1.0,
             "value": null,
@@ -1237,7 +1237,7 @@ module.exports = {
             "notes" : "features column name"
           },
           {
-            "name" : "initMode",
+            "name" : "initMode", // belom
             "type" : "str",
             "default": 'k-means||',
             "value": null,
@@ -1297,7 +1297,7 @@ module.exports = {
         "name": "lda",
         "params":
           [{
-            "name" : "checkpointInterval",
+            "name" : "checkPointInterval",
             "type" : "str",
             "default": 10,
             "value": null,
@@ -1329,7 +1329,7 @@ module.exports = {
             "notes" : "(for em optimizer) if using checkpointing, this indicates whether to keep the last checkpoint. if false, then the checkpoint will be deleted. deleting the checkpoint can cause failures if a data partition is lost, so set this bit with care"
           },
           {
-            "name" : "learningDecay",
+            "name" : "learningDecay", // belom
             "type" : "float",
             "default": 0.51,
             "value": null,
@@ -1337,7 +1337,7 @@ module.exports = {
             "notes" : "this should be between (0.5, 1.0] to guarantee asymptotic convergence. (for online optimizer) learning rate, set as an exponential decay rate"
           },       
           {
-            "name" : "learningOffset",
+            "name" : "learningOffset", // belom
             "type" : "float",
             "default": 1024.0,
             "value": null,
@@ -1377,7 +1377,7 @@ module.exports = {
             "notes" : "Random seed, must be Integer, float number will error exept 0 after comma"
           },
           {
-            "name" : "subsamplingRate",
+            "name" : "subsamplingRate", // belom
             "type" : "float",
             "default": 0.05,
             "value": null,
@@ -1393,7 +1393,7 @@ module.exports = {
             "notes" : "output column with estimates of the topic mixture distribution for each document (often called 'theta' in the literature). returns a vector of zeros for an empty document"
           },        
           {
-            "name" : "topicConcentration",
+            "name" : "topicConcentration", // belom
             "type" : "float",
             "default": null,
             "value": null,

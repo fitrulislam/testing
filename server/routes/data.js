@@ -7,5 +7,7 @@ router
   .get('/algorithm/getall', dataController.getAll)
   .get('/algorithm/getallagain', dataController.getAllAlgo)
   .post('/algorithm', dataController.makeAlgo)
+  .get('/waiting', dataController.waiting)
+  .get('/check', dataController.check)
 
 module.exports = router;

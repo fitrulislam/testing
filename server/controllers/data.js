@@ -1,6 +1,7 @@
 const Algorithm = require('../models/algo');
 const { MachineLearning } = require('../helpers/algorithm/machineLearning');
 const { Transformator } = require('../helpers/algorithm/transformator');
+const { test, model, dataset, output } = require('../helpers/algorithm/test');
 
 module.exports = {
   algorithm: async (req, res) => {
@@ -41,8 +42,10 @@ module.exports = {
     try {
       res.status(200).json({
         message: 'all algo data',
-        machineLearning: MachineLearning,
-        transformator: Transformator
+        output,
+        dataset,
+        test,
+        model
       })
     } catch (error) {
       res.status(500).json({
@@ -56,6 +59,31 @@ module.exports = {
       res.status(200).json({
         message: 'all algo data',
         data: algo
+      })
+    } catch (error) {
+      res.status(500).json({
+        message: 'something went wrong'
+      })
+    }
+  },
+  waiting: (req, res) => {
+    try {
+      setTimeout(
+        function(){
+          res.status(200).json({
+            message: 'yessss'
+          });
+      }, 10000);
+    } catch (error) {
+      res.status(500).json({
+        message: 'something went wrong'
+      })
+    }
+  },
+  check: (req, res) => {
+    try {
+      res.status(200).json({
+        message: 'done'
       })
     } catch (error) {
       res.status(500).json({
