@@ -89,7 +89,7 @@ module.exports = {
                 "display_name": "Maximum Iteration",
                 "description": "max number of iterations (>= 0).",
                 "datatype": "int",
-                // "value": ['kampret 1', 'kampret 2', 'kampret 3'],
+                // "value": ["kampret 1", "kampret 2", "kampret 3"],
                 "value": [2, 3, 4],
                 "mandatory": true,
             },
@@ -104,5 +104,102 @@ module.exports = {
             }
         ]
       }
+  ],
+  model: [
+    {
+      "name": "model1",
+      "display_name": "Model 1",
+      "params": [
+        {
+          "name": "property1",
+          "display_name": "Property 1",
+          "description": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "model2",
+      "display_name": "Model 2",
+      "params": [
+        {
+          "name": "property1",
+          "display_name": "Property 1",
+          "description": "",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  dataset: [
+    {
+      "name": "dataset1",
+      "display_name": "Dataset 1",
+      "params": [
+        {
+          "name": "property1",
+          "display_name": "Property 1",
+          "description": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "dataset2",
+      "display_name": "Dataset 2",
+      "params": [
+        {
+          "name": "property1",
+          "display_name": "Property 1",
+          "description": "",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  output: [
+    {
+      "name": "asNewDataset",
+      "display_name": "As New Dataset",
+      "params": [
+        {
+          "name": "datasetName",
+          "display_name": "Dataset Name",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "description",
+          "display_name": "Description",
+          "description": "Enter the detailed description about your dataset",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "asNewModel",
+      "display_name": "As New Model",
+      "params": [
+        {
+          "name": "modelName",
+          "display_name": "Model Name",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "type",
+          "display_name": "Type",
+          "description": "",
+          "value": "None",
+          "options": ["None", "CV", "TVS"]
+        },
+        {
+          "name": "description",
+          "display_name": "Description",
+          "description": "Enter the detailed description about your model",
+          "value": ""
+        }
+      ]
+    }
   ]
 }
