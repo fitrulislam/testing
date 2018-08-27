@@ -9,7 +9,7 @@ module.exports = {
               "name": "inputCol",
               "display_name": "Input Column",
               "description": "",
-              "value": ["features"],
+              "value": "features",
               "datatype": "vector",
               "mandatory": true
           },
@@ -17,7 +17,7 @@ module.exports = {
               "name": "labelCol",
               "display_name": "Label Column",
               "description": "",
-              "value": ["label"],
+              "value": "label",
               "datatype": "double",
               "mandatory": true
           }
@@ -60,7 +60,7 @@ module.exports = {
                 "name": "inputCol",
                 "display_name": "Input Column",
                 "description": "",
-                "value": ["features"],
+                "value": "features",
                 "datatype": "vector",
                 "mandatory": true
             },
@@ -68,7 +68,7 @@ module.exports = {
                 "name": "labelCol",
                 "display_name": "Label Column",
                 "description": "",
-                "value": ["label"],
+                "value": "label",
                 "datatype": "double",
                 "mandatory": true
             }
