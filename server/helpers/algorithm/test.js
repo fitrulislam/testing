@@ -89,7 +89,6 @@ module.exports = {
                 "display_name": "Maximum Iteration",
                 "description": "max number of iterations (>= 0).",
                 "datatype": "int",
-                // "value": ["kampret 1", "kampret 2", "kampret 3"],
                 "value": [2, 3, 4],
                 "mandatory": true,
             },
@@ -135,7 +134,7 @@ module.exports = {
     {
       "name": "dataset1",
       "display_name": "Dataset 1",
-      "path": "hdfs/...",
+      "path": "hdfs://.../source/...",
       "params": [
         {
           "name": "property1",
@@ -149,13 +148,27 @@ module.exports = {
           "name": "availableColumns",
           "display_name": "Available Columns",
           "description": "",
-          "value": ["Weather", "Temperature", "Humidity"]
+          "value": [
+            {
+              "columnName": "Weather",
+              "dataType": "int"
+            },
+            {
+              "columnName": "Temperature",
+              "dataType": "double"
+            },
+            {
+              "columnName": "Humadity",
+              "dataType": "str"
+            }
+          ]
         }
       ]
     },
     {
       "name": "dataset2",
       "display_name": "Dataset 2",
+      "path": "hdfs://.../source/...",
       "params": [
         {
           "name": "property1",
@@ -169,7 +182,20 @@ module.exports = {
           "name": "availableColumns",
           "display_name": "Available Columns",
           "description": "",
-          "value": ["Weight", "Height", "Size"]
+          "value": [
+            {
+              "columnName": "Weight",
+              "dataType": "int"
+            },
+            {
+              "columnName": "Height",
+              "dataType": "double"
+            },
+            {
+              "columnName": "Size",
+              "dataType": "int"
+            }
+          ]
         }
       ]
     }
@@ -178,6 +204,7 @@ module.exports = {
     {
       "name": "asNewDataset",
       "display_name": "As New Dataset",
+      "path": "hdfs://.../sink/...",
       "params": [
         {
           "name": "datasetName",
@@ -196,6 +223,7 @@ module.exports = {
     {
       "name": "asNewModel",
       "display_name": "As New Model",
+      "path": "hdfs://.../sink/...",
       "params": [
         {
           "name": "modelName",
