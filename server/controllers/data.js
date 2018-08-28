@@ -1,5 +1,5 @@
 const Algorithm = require('../models/algo');
-const { MachineLearning } = require('../helpers/algorithm/machineLearning');
+const MachineLearning = require('../helpers/algorithm/machineLearning');
 const { Transformator } = require('../helpers/algorithm/transformator');
 const { test, model, dataset, output } = require('../helpers/algorithm/test');
 
@@ -42,6 +42,7 @@ module.exports = {
     try {
       res.status(200).json({
         message: 'all algo data',
+        MachineLearning,
         output,
         dataset,
         test,
