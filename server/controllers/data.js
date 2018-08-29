@@ -74,7 +74,7 @@ module.exports = {
           res.status(200).json({
             message: 'yessss'
           });
-      }, 10000);
+      }, 3000);
     } catch (error) {
       res.status(500).json({
         message: 'something went wrong'
