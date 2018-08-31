@@ -150,15 +150,15 @@ module.exports = {
           "description": "",
           "value": [
             {
-              "columnName": "Weather",
+              "columnName": "weather",
               "dataType": "int"
             },
             {
-              "columnName": "Temperature",
+              "columnName": "temperature",
               "dataType": "double"
             },
             {
-              "columnName": "Humadity",
+              "columnName": "humidity",
               "dataType": "str"
             }
           ]
@@ -184,15 +184,15 @@ module.exports = {
           "description": "",
           "value": [
             {
-              "columnName": "Weight",
+              "columnName": "weight",
               "dataType": "int"
             },
             {
-              "columnName": "Height",
+              "columnName": "height",
               "dataType": "double"
             },
             {
-              "columnName": "Size",
+              "columnName": "size",
               "dataType": "int"
             }
           ]

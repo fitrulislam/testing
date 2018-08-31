@@ -540,7 +540,7 @@ module.exports = {
         "display_name": "Lower Bounds on Coefficients",
         "description": "The lower bounds on coefficients if fitting under bound constrained optimization. The bound matrix must be compatible with the shape (1, number of features) for binomial regression, or (number of classes, number of features) for multinomial regression.",
         "mandatory": false,
-        "datatype": null,
+        "datatype": "List[int]",
         "value": null
       },
       {
@@ -548,7 +548,7 @@ module.exports = {
         "display_name": "Lower Bounds on Intercepts",
         "description": "The lower bounds on intercepts if fitting under bound constrained optimization. The bounds vector size must beequal with 1 for binomial regression, or the number oflasses for multinomial regression.",
         "mandatory": false,
-        "datatype": null,
+        "datatype": "List[int]",
         "value": null
       },
       {
@@ -564,7 +564,7 @@ module.exports = {
         "display_name": "Upper Bounds on Coefficients",
         "description": "The upper bounds on coefficients if fitting under bound constrained optimization. The bound matrix must be compatible with the shape (1, number of features) for binomial regression, or (number of classes, number of features) for multinomial regression.",
         "mandatory": false,
-        "datatype": null,
+        "datatype": "List[int]",
         "value": null
       },
       {
@@ -572,7 +572,7 @@ module.exports = {
         "display_name": "Upper Bounds on Intercepts",
         "description": "The upper bounds on intercepts if fitting under bound constrained optimization. The bound vector size must be equal with 1 for binomial regression, or the number of classes for multinomial regression.",
         "mandatory": false,
-        "datatype": null,
+        "datatype": "List[int]",
         "value": null
       }
     ]
