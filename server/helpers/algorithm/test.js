@@ -132,74 +132,6 @@ module.exports = {
   ],
   dataset: [
     {
-<<<<<<< HEAD
-      "name": "dataset1",
-      "display_name": "Dataset 1",
-      "path": "hdfs://.../source/...",
-      "params": [
-        {
-          "name": "property1",
-          "display_name": "Property 1",
-          "description": "",
-          "value": ""
-        }
-      ],
-      "columns": [
-        {
-          "name": "availableColumns",
-          "display_name": "Available Columns",
-          "description": "",
-          "value": [
-            {
-              "columnName": "weather",
-              "dataType": "int"
-            },
-            {
-              "columnName": "temperature",
-              "dataType": "double"
-            },
-            {
-              "columnName": "humidity",
-              "dataType": "str"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "dataset2",
-      "display_name": "Dataset 2",
-      "path": "hdfs://.../source/...",
-      "params": [
-        {
-          "name": "property1",
-          "display_name": "Property 1",
-          "description": "",
-          "value": ""
-        }
-      ],
-      "columns": [
-        {
-          "name": "availableColumns",
-          "display_name": "Available Columns",
-          "description": "",
-          "value": [
-            {
-              "columnName": "weight",
-              "dataType": "int"
-            },
-            {
-              "columnName": "height",
-              "dataType": "double"
-            },
-            {
-              "columnName": "size",
-              "dataType": "int"
-            }
-          ]
-        }
-      ]
-=======
       "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
       "datasetId": "8ea53eb6-12e2-4f2a-b519-da4ef17702ed",
       "derivative": false,
@@ -398,7 +330,6 @@ module.exports = {
         "marginPrice": 1,
         "basePrice": 0
       }
->>>>>>> 803914677057465a2d1e50a586defe2430c12318
     }
     // {
     //   "name": "dataset2",

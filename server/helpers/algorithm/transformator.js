@@ -1,195 +1,100 @@
 module.exports = {
-  Transformator: 
-    [
-      {
-        "name" : "MinMaxScaler",
-        "params" :
-          [{
-            "name" : "min", // belom
-            "type" : "float",
-            "default" : 0.0,
-            "value" : null,
-            "options" : "any",
-            "notes" : "minimum value"
-          },
-          {
-            "name" : "max", // belom
-            "type" : "float",
-            "default": 1.0,
-            "value" : null,
-            "options" : "any",
-            "notes" : "maximum value"
-          },
-          { 
-            "name" : "inputCol",
-            "type" : "str",
-            "default": "features",
-            "value" : null,
-            "options" : "any",
-            "notes" : "input columns name"
-          },
-          { 
-            "name" : "outputCol",
-            "type" : "str",
-            "default": "scaledFeatures",
-            "value" : null,
-            "options" : "any",
-            "notes" : "output columns name"
-          }],
-        "task" : "preprocessing",
-        "output_type" : "transformer",
-        "before" : ["minmaxscaler", "maxabs"],
-        "after" : ["logisticRegression", "decisionTreeClassifier"]
-      },
-      {
-        "name" : "MaxAbsScaler",
-        "params" : 
-          [{ 
-            "name" : "inputCol",
-            "type" : "str",
-            "default": "features",
-            "value" : null,
-            "options" : "any",
-            "notes" : "input columns name"
-          },
-          { 
-            "name" : "outputCol",
-            "type" : "str",
-            "default": "scaledFeatures",
-            "value" : null,
-            "options" : "any",
-            "notes" : "output columns name"
-          }],
-        "task" : "preprocessing",
-        "output_type" : "transformer",
-        "before" : ["minmaxscaler", "maxabs"],
-        "after" : ["logisticRegression", "decisionTreeClassifier"]
-      },
-      {
-        "name" : "BinaryNormalization",
-        "params" : 
-          [{
-            "name" : "threshold",
-            "type" : "float",
-            "default" : 0.0,
-            "value" : null,
-            "options" : "in range [0,1]",
-            "notes" : "threshold [0,1]"
-          },
-          { 
-            "name" : "inputCol",
-            "type" : "str",
-            "default": "features",
-            "value" : null,
-            "options" : "any",
-            "notes" : "input columns name"
-          },
-          { 
-            "name" : "outputCol",
-            "type" : "str",
-            "default": "scaledFeatures",
-            "value" : null,
-            "options" : "any",
-            "notes" : "output columns name"
-          }],
-        "task" : "preprocessing",
-        "output_type" : "transformer",
-        "before" : ["minmaxscaler", "maxabs"],
-        "after" : ["logisticRegression", "decisionTreeClassifier"]
-      },
-      {
-        "name" : "StandardScaler",
-        "params" :
-          [{
-            "name" : "withMean",
-            "type" : "bool",
-            "default" : false,
-            "options" : "bool",
-            "notes" : ""
-          },
-          {
-            "name" : "withStd",
-            "type" : "bool",
-            "default": true,
-            "options" : "bool",
-            "notes" : ""
-          },
-          { 
-            "name" : "inputCol",
-            "type" : "str",
-            "default": "features",
-            "value" : null,
-            "options" : "any",
-            "notes" : "input columns name"
-          },
-          { 
-            "name" : "outputCol",
-            "type" : "str",
-            "default": "scaledFeatures",
-            "value" : null,
-            "options" : "any",
-            "notes" : "output columns name"
-          }],
-        "task" : "preprocessing",
-        "output_type" : "transformer",
-        "before" : ["minmaxscaler", "maxabs"],
-        "after" : ["logisticRegression", "decisionTreeClassifier"]
-      },
-      {
-        "name": "dct",
-        "params":
-          [{
-            "name" : "outputCol",
-            "type" : "str",
-            "default": null,
-            "value": null,
-            "options" : "any string",
-            "notes" : "output column name"
-          },
-          {
-            "name" : "inputCol",
-            "type" : "str",
-            "default": null,
-            "value": null,
-            "options" : "any string",
-            "notes" : "input column name"
-          },  
-          {
-            "name" : "inverse",
-            "type" : "boolean",
-            "default": "false",
-            "value": null,
-            "options" : "'true' or 'false'",
-            "notes" : "set transformer to perform inverse dct, default false"
-          }]
-      },
-      {
-        "name": "pca",
-        "params":
-          [{
-            "name" : "outputCol",
-            "type" : "str",
-            "default": null,
-            "value": null,
-            "options" : "any string",
-            "notes" : "output column name"
-          },
-          {
-            "name" : "inputCol",
-            "type" : "str",
-            "default": null,
-            "value": null,
-            "options" : "any string",
-            "notes" : "input column name"
-          },  
-          {
-            "name" : "k",
-            "type" : "int",
-            "default": null,
-            "value": null,
-            "options" : ">0",
-            "notes" : "the number of principal components "
-          }]
-      }
-    ]
-}
+dtypes: {
+'_creation_time': 'Date',
+'_data_source_id': 'UUID',
+'_edge_attachment': 'String',
+'_edge_group': 'String',
+'_edge_note': 'String',
+'_edge_type': 'String',
+'_id': 'String',
+'_label': 'String',
+'_timestamp': 'Date',
+'_update_count': 'Integer',
+'_update_time': 'Date',
+'_vertex_attachment': 'String',
+'_vertex_group': 'String',
+'_vertex_note': 'String',
+'_vertex_type': 'String',
+'_weight': 'Double',
+'address': 'String',
+'age': 'Double',
+'amount': 'Double',
+'animal_type': 'String',
+'bank_id': 'String',
+'bank_type': 'String',
+'book_id': 'String',
+'book_type': 'String',
+'brand': 'String',
+'building_type': 'String',
+'condition': 'String',
+'contagious': 'String',
+'coordinate': 'Geoshape',
+'count': 'Integer',
+'cover_type': 'String',
+'customer_count': 'Integer',
+'disease_type': 'String',
+'distance': 'Double',
+'doctor_count': 'Integer',
+'email': 'String',
+'facilities': 'String',
+'family_type': 'String',
+'flight_number': 'String',
+'floor_count': 'Integer',
+'food_type': 'String',
+'gender': 'String',
+'height': 'Double',
+'hobby': 'String',
+'hospital_id': 'String',
+'hospital_type': 'String',
+'hotel_id': 'String',
+'hotel_type': 'String',
+'isbn': 'String',
+'issn': 'String',
+'item_count': 'Integer',
+'item_type': 'String',
+'job': 'String',
+'location_id': 'String',
+'location_type': 'String',
+'major': 'String',
+'mobile_phone_number': 'String',
+'name': 'String',
+'nationality': 'String',
+'nik': 'String',
+'note': 'String',
+'office_id': 'String',
+'office_type': 'String',
+'organization_id': 'String',
+'organization_type': 'String',
+'passport_id': 'String',
+'payment_type': 'String',
+'person_id': 'String',
+'personality': 'String',
+'phone_number': 'String',
+'price': 'Double',
+'publisher': 'String',
+'race': 'String',
+'religion': 'String',
+'room_count': 'Integer',
+'salary': 'Double',
+'school_id': 'String',
+'school_type': 'String',
+'sentiment': 'String',
+'shop_id': 'String',
+'shop_type': 'String',
+'since': 'Date',
+'size': 'Double',
+'skin_color': 'String',
+'software_id': 'String',
+'software_type': 'String',
+'staff_count': 'Integer',
+'status': 'String',
+'student_count': 'Integer',
+'tax_id': 'String',
+'teacher_count': 'Integer',
+'time': 'Date',
+'transportation_type': 'String',
+'until': 'Date',
+'website': 'String',
+'weight': 'String',
+'zip_code': 'String'
+}}

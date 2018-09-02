@@ -1,6 +1,6 @@
 const Algorithm = require('../models/algo');
 const MachineLearning = require('../helpers/algorithm/machineLearning');
-const { Transformator } = require('../helpers/algorithm/transformator');
+const { dtypes } = require('../helpers/algorithm/transformator');
 const { test, model, dataset, output } = require('../helpers/algorithm/test');
 
 module.exports = {
@@ -46,7 +46,8 @@ module.exports = {
         output,
         dataset,
         test,
-        model
+        model,
+        dtypes
       })
     } catch (error) {
       res.status(500).json({
