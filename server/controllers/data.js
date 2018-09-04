@@ -73,7 +73,8 @@ module.exports = {
       setTimeout(
         function(){
           res.status(200).json({
-            message: 'yessss'
+            message1: 'ok',
+            message2: 'waiting'
           });
       }, 3000);
     } catch (error) {
@@ -85,7 +86,7 @@ module.exports = {
   check: (req, res) => {
     try {
       res.status(200).json({
-        message: 'done'
+        message: 'empty'
       })
     } catch (error) {
       res.status(500).json({
