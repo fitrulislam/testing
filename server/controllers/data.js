@@ -113,10 +113,64 @@ module.exports = {
       })
     }
   },
+  test: (req, res) => {
+    try {
+      setTimeout(
+        function(){
+          res.status(200).json({
+            message: {
+              'validation': [
+                {
+                  'details': [
+                    [[], [], {}],
+                    [[], [], {}],
+                    [[], [], {}],
+                    [['age', 'age'], [], {}],
+                    [['label', 'features'], ['prediction'], {}],
+                    [[], [], {}]
+                   ],
+                  'valid': true
+                }
+              ]
+            }
+          });
+      }, 3000);
+    } catch (error) {
+      res.status(500).json({
+        message: 'something went wrong'
+      })
+    }
+  },
+  train: (req, res) => {
+    try {
+      setTimeout(
+        function(){
+          res.status(200).json({
+            message: {
+              composer_id : "<composer_id>",
+              training_status : "IN PROGRESS",
+              last_stage : "fit"
+            }
+          });
+      }, 3000);
+    } catch (error) {
+      res.status(500).json({
+        message: 'something went wrong'
+      })
+    }
+  },
   check: (req, res) => {
     try {
       res.status(200).json({
-        message: 'empty'
+        message: {
+          composer_id : "<composer_id>",
+          running_id : "<running_id>",
+          status : "DONE",
+          read_status: "Yes",
+          modelData_id : "<modelData_id>",
+          last_stage : "fit"
+                            
+        }
       })
     } catch (error) {
       res.status(500).json({

@@ -9,5 +9,7 @@ router
   .post('/algorithm', dataController.makeAlgo)
   .get('/waiting', dataController.waiting)
   .get('/check', dataController.check)
+  .get('/test', dataController.test)
+  .get('/train', dataController.train)
 
 module.exports = router;
