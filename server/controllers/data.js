@@ -76,6 +76,36 @@ module.exports = {
             message1: 'ok',
             message2: 'waiting'
           });
+          // res.status(200).json({
+          //   validation: [
+          //     {
+          //       details: [
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [[], [], {}]
+          //       ],
+          //       valid: true
+          //     }
+          //   ]
+          // })
+          // res.status(200).json({
+          //   validation: [
+          //     {
+          //       details: [
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [[], [], {}],
+          //         [['age', 'count', 'prediction', 'age', 'gender', 'prediction'], [], {}],
+          //         [['label', 'features'], ['prediction'], {}],
+          //         [[], [], {}]
+          //       ],
+          //       valid: False
+          //     }
+          //   ]
+          // })
       }, 3000);
     } catch (error) {
       res.status(500).json({
