@@ -129,7 +129,7 @@ module.exports = {
                     [['label', 'features'], ['prediction'], {}],
                     [[], [], {}]
                    ],
-                  'valid': true
+                  'valid': false
                 }
               ]
             }
