@@ -136,7 +136,7 @@ module.exports = {
           composer_id : "<composer_id>",
           running_id : "<running_id>",
           status : "DONE",
-          read_status: "Yes",
+          read_status: "None",
           modelData_id : "<modelData_id>",
           last_stage : "fit"
                             
