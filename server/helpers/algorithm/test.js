@@ -133,106 +133,6 @@ module.exports = {
   dataset: [
     {
       "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-      "datasetId": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-      "derivative": false,
-      "latestDataFlow": {
-        "type": "MAIN_DATA_FLOW",
-        "id": {
-          "datasetId": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-          "sourceName": "UNDEFINED",
-          "version": 1,
-          "timestamp": 1536219855220
-        },
-        "dataIntegrationMeta": {
-          "type": "MAIN_DATA_META",
-          "mainArangoDBConfig": {
-            "nodeCollection": "node_59fd8ef5-be84-41ed-87ff-31648036b23b_1_1536219855220",
-            "relCollection": "rel_59fd8ef5-be84-41ed-87ff-31648036b23b_1_1536219855220",
-            "graphName": "graph_59fd8ef5-be84-41ed-87ff-31648036b23b_1_1536219855220"
-          },
-          "mainHdfsFileConfig": {
-            "mappedNodeFile": "/laniakea/asset/dataset/mapped/59fd8ef5-be84-41ed-87ff-31648036b23b/node_1_1536219855220.parquet",
-            "mappedRelationFile": "/laniakea/asset/dataset/mapped/59fd8ef5-be84-41ed-87ff-31648036b23b/rel_1_1536219855220.parquet",
-            "rawFolder": "/laniakea/asset/dataset/raw/59fd8ef5-be84-41ed-87ff-31648036b23b/1/1536219855220"
-          },
-          "dataSourceConfig": {
-            "dataSourceType": "XLS",
-            "id": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "hostName": "",
-            "port": null,
-            "username": "",
-            "password": "",
-            "databaseName": "",
-            "filePath": "/storage/file-assets/dataset-files/59fd8ef5-be84-41ed-87ff-31648036b23b.xls",
-            "fileUrl": "",
-            "delimiter": ",",
-            "quoteCharacter": "\"",
-            "escapeCharacter": "/",
-            "encoding": "utf8"
-          },
-          "mappingConfig": {
-            "id": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "dataSourceType": "XLS",
-            "dataSourceConfigId": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "mappingScheme": "{\"data_source_type\":\"XLS\",\"vertices\":[{\"vertex\":\"customer\",\"type\":\"person\",\"properties\":{\"name\":\"Customer Name\",\"_label\":\"person\",\"_id\":\"Customer ID\",\"_data_source_id\":\"59fd8ef5-be84-41ed-87ff-31648036b23b\"},\"sheet\":\"Orders\"},{\"vertex\":\"product\",\"type\":\"book\",\"properties\":{\"name\":\"Product Name\",\"book_type\":\"Sub-Category\",\"cover_type\":\"Category\",\"_label\":\"book\",\"_id\":\"Product ID\",\"_data_source_id\":\"59fd8ef5-be84-41ed-87ff-31648036b23b\"},\"sheet\":\"Orders\"}],\"edges\":[{\"edge\":\"buy\",\"type\":\"shops\",\"properties\":{\"count\":\"Quantity\",\"_data_source_id\":\"59fd8ef5-be84-41ed-87ff-31648036b23b\",\"_id\":\"Order ID\",\"_label\":\"shops\"},\"vertex1\":{\"vertex\":\"customer\"},\"vertex2\":{\"vertex\":\"product\"},\"sheet\":\"Orders\"}]}"
-          }
-        },
-        "dataServingMeta": {
-          "endpointId": "8edc2a6a-66cb-4f09-898b-af4fcc8cd67f",
-          "asyncRestApi": true,
-          "asyncRestApiConfig": {
-            "id": "4e9ad91f-daaf-4553-9616-d901a8d2f0af",
-            "name": "4e9ad91f-daaf-4553-9616-d901a8d2f0af",
-            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-            "category": "free",
-            "marginPrice": 1,
-            "basePrice": 0,
-            "upstreamHost": "206.189.34.231:18002",
-            "upstreamPath": "/v1/query/async/dataset/59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "downstreamPath": "/v1/query/async/dataset/8edc2a6a-66cb-4f09-898b-af4fcc8cd67f"
-          },
-          "syncRestApi": true,
-          "syncRestApiConfig": {
-            "id": "3fab79f3-4902-454a-be4e-538ab07de2d8",
-            "name": "3fab79f3-4902-454a-be4e-538ab07de2d8",
-            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-            "category": "free",
-            "marginPrice": 1,
-            "basePrice": 0,
-            "upstreamHost": "206.189.34.231:18002",
-            "upstreamPath": "/v1/query/sync/dataset/59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "downstreamPath": "/v1/query/sync/dataset/8edc2a6a-66cb-4f09-898b-af4fcc8cd67f"
-          },
-          "webSocketApi": false,
-          "webSocketApiConfig": null
-        },
-        "scheduledJob": {
-          "dataIntegrationMetaTypes": "MAIN_DATA_META",
-          "jobEventType": "CREATE",
-          "dataFlowId": {
-            "datasetId": "59fd8ef5-be84-41ed-87ff-31648036b23b",
-            "sourceName": "UNDEFINED",
-            "version": 1,
-            "timestamp": 1536219855220
-          },
-          "period": 1,
-          "periodUnit": "HOUR",
-          "nextRun": "2018-09-06T08:44:15.220+0000",
-          "lastRun": null,
-          "lastRunStatus": "SUCCESS",
-          "lastRunDetail": null,
-          "autoUpdate": true
-        },
-        "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3"
-      },
-      "pricing": {
-        "type": "FREE",
-        "marginPrice": 1,
-        "basePrice": 0
-      }
-    },
-    {
-      "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
       "datasetId": "8ea53eb6-12e2-4f2a-b519-da4ef17702ed",
       "derivative": false,
       "latestDataFlow": {
@@ -433,6 +333,106 @@ module.exports = {
     },
     {
       "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
+      "datasetId": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+      "derivative": false,
+      "latestDataFlow": {
+        "type": "MAIN_DATA_FLOW",
+        "id": {
+          "datasetId": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+          "sourceName": "UNDEFINED",
+          "version": 1,
+          "timestamp": 1536311396758
+        },
+        "dataIntegrationMeta": {
+          "type": "MAIN_DATA_META",
+          "mainArangoDBConfig": {
+            "nodeCollection": "node_a22ebdc4-4f72-459c-8b7a-8365259e6890_1_1536311396758",
+            "relCollection": "rel_a22ebdc4-4f72-459c-8b7a-8365259e6890_1_1536311396758",
+            "graphName": "graph_a22ebdc4-4f72-459c-8b7a-8365259e6890_1_1536311396758"
+          },
+          "mainHdfsFileConfig": {
+            "mappedNodeFile": "/laniakea/asset/dataset/mapped/a22ebdc4-4f72-459c-8b7a-8365259e6890/node_1_1536311396758.parquet",
+            "mappedRelationFile": "/laniakea/asset/dataset/mapped/a22ebdc4-4f72-459c-8b7a-8365259e6890/rel_1_1536311396758.parquet",
+            "rawFolder": "/laniakea/asset/dataset/raw/a22ebdc4-4f72-459c-8b7a-8365259e6890/1/1536311396758"
+          },
+          "dataSourceConfig": {
+            "dataSourceType": "CSV",
+            "id": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "hostName": "",
+            "port": null,
+            "username": "",
+            "password": "",
+            "databaseName": "",
+            "filePath": "/storage/file-assets/dataset-files/a22ebdc4-4f72-459c-8b7a-8365259e6890.csv",
+            "fileUrl": "",
+            "delimiter": ",",
+            "quoteCharacter": "\"",
+            "escapeCharacter": "/",
+            "encoding": "utf8"
+          },
+          "mappingConfig": {
+            "id": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "dataSourceType": "CSV",
+            "dataSourceConfigId": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "mappingScheme": "{\"data_source_type\":\"CSV\",\"vertices\":[{\"vertex\":\"toko\",\"type\":\"shop\",\"properties\":{\"phone_number\":\"user_rating\",\"mobile_phone_number\":\"user_rating_ver\",\"_label\":\"shop\",\"_id\":\"id\",\"_data_source_id\":\"a22ebdc4-4f72-459c-8b7a-8365259e6890\"}}],\"edges\":[]}"
+          }
+        },
+        "dataServingMeta": {
+          "endpointId": "19e46140-2557-42ed-9d1b-7495b9608526",
+          "asyncRestApi": true,
+          "asyncRestApiConfig": {
+            "id": "cc1b5708-5dbf-4900-8250-fbda4a4f33c2",
+            "name": "cc1b5708-5dbf-4900-8250-fbda4a4f33c2",
+            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
+            "category": "free",
+            "marginPrice": 1,
+            "basePrice": 0,
+            "upstreamHost": "206.189.34.231:18002",
+            "upstreamPath": "/v1/query/async/dataset/a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "downstreamPath": "/v1/query/async/dataset/19e46140-2557-42ed-9d1b-7495b9608526"
+          },
+          "syncRestApi": true,
+          "syncRestApiConfig": {
+            "id": "3c2a9ef5-c3c6-475a-9333-7965e2c3cfba",
+            "name": "3c2a9ef5-c3c6-475a-9333-7965e2c3cfba",
+            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
+            "category": "free",
+            "marginPrice": 1,
+            "basePrice": 0,
+            "upstreamHost": "206.189.34.231:18002",
+            "upstreamPath": "/v1/query/sync/dataset/a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "downstreamPath": "/v1/query/sync/dataset/19e46140-2557-42ed-9d1b-7495b9608526"
+          },
+          "webSocketApi": false,
+          "webSocketApiConfig": null
+        },
+        "scheduledJob": {
+          "dataIntegrationMetaTypes": "MAIN_DATA_META",
+          "jobEventType": "CREATE",
+          "dataFlowId": {
+            "datasetId": "a22ebdc4-4f72-459c-8b7a-8365259e6890",
+            "sourceName": "UNDEFINED",
+            "version": 1,
+            "timestamp": 1536311396758
+          },
+          "period": 1,
+          "periodUnit": "HOUR",
+          "nextRun": "2018-09-07T10:09:56.758+0000",
+          "lastRun": null,
+          "lastRunStatus": "SUCCESS",
+          "lastRunDetail": null,
+          "autoUpdate": true
+        },
+        "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3"
+      },
+      "pricing": {
+        "type": "FREE",
+        "marginPrice": 1,
+        "basePrice": 0
+      }
+    },
+    {
+      "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
       "datasetId": "d3b75101-3902-45f4-8b93-a3f29489cddf",
       "derivative": false,
       "latestDataFlow": {
@@ -520,106 +520,6 @@ module.exports = {
           "nextRun": "2018-09-03T05:30:04.616+0000",
           "lastRun": null,
           "lastRunStatus": "PENDING",
-          "lastRunDetail": null,
-          "autoUpdate": true
-        },
-        "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3"
-      },
-      "pricing": {
-        "type": "FREE",
-        "marginPrice": 1,
-        "basePrice": 0
-      }
-    },
-    {
-      "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-      "datasetId": "f71cb368-7b74-41b9-acd0-d774661790d6",
-      "derivative": false,
-      "latestDataFlow": {
-        "type": "MAIN_DATA_FLOW",
-        "id": {
-          "datasetId": "f71cb368-7b74-41b9-acd0-d774661790d6",
-          "sourceName": "UNDEFINED",
-          "version": 1,
-          "timestamp": 1536218302030
-        },
-        "dataIntegrationMeta": {
-          "type": "MAIN_DATA_META",
-          "mainArangoDBConfig": {
-            "nodeCollection": "node_f71cb368-7b74-41b9-acd0-d774661790d6_1_1536218302030",
-            "relCollection": "rel_f71cb368-7b74-41b9-acd0-d774661790d6_1_1536218302030",
-            "graphName": "graph_f71cb368-7b74-41b9-acd0-d774661790d6_1_1536218302030"
-          },
-          "mainHdfsFileConfig": {
-            "mappedNodeFile": "/laniakea/asset/dataset/mapped/f71cb368-7b74-41b9-acd0-d774661790d6/node_1_1536218302030.parquet",
-            "mappedRelationFile": "/laniakea/asset/dataset/mapped/f71cb368-7b74-41b9-acd0-d774661790d6/rel_1_1536218302030.parquet",
-            "rawFolder": "/laniakea/asset/dataset/raw/f71cb368-7b74-41b9-acd0-d774661790d6/1/1536218302030"
-          },
-          "dataSourceConfig": {
-            "dataSourceType": "CSV",
-            "id": "f71cb368-7b74-41b9-acd0-d774661790d6",
-            "hostName": "",
-            "port": null,
-            "username": "",
-            "password": "",
-            "databaseName": "",
-            "filePath": "/storage/file-assets/dataset-files/f71cb368-7b74-41b9-acd0-d774661790d6.csv",
-            "fileUrl": "",
-            "delimiter": ",",
-            "quoteCharacter": "\"",
-            "escapeCharacter": "/",
-            "encoding": "utf8"
-          },
-          "mappingConfig": {
-            "id": "f71cb368-7b74-41b9-acd0-d774661790d6",
-            "dataSourceType": "CSV",
-            "dataSourceConfigId": "f71cb368-7b74-41b9-acd0-d774661790d6",
-            "mappingScheme": "{\"data_source_type\":\"CSV\",\"vertices\":[{\"vertex\":\"tittle\",\"type\":\"organization\",\"properties\":{\"name\":\"title\",\"_label\":\"organization\",\"_id\":\"doc_id\",\"_data_source_id\":\"f71cb368-7b74-41b9-acd0-d774661790d6\"}},{\"vertex\":\"priority\",\"type\":\"office\",\"properties\":{\"name\":\"priority\",\"_label\":\"office\",\"_id\":\"doc_id\",\"_data_source_id\":\"f71cb368-7b74-41b9-acd0-d774661790d6\"}}],\"edges\":[{\"edge\":\"has\",\"type\":\"has\",\"properties\":{\"_data_source_id\":\"f71cb368-7b74-41b9-acd0-d774661790d6\",\"_id\":\"id\",\"_label\":\"has\"},\"vertex1\":{\"vertex\":\"tittle\"},\"vertex2\":{\"vertex\":\"priority\"}}]}"
-          }
-        },
-        "dataServingMeta": {
-          "endpointId": "44017d7f-6745-4225-8eaf-12ebe706ef26",
-          "asyncRestApi": true,
-          "asyncRestApiConfig": {
-            "id": "38991d7c-1b90-470d-a06e-ca02635a7b70",
-            "name": "38991d7c-1b90-470d-a06e-ca02635a7b70",
-            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-            "category": "free",
-            "marginPrice": 1,
-            "basePrice": 0,
-            "upstreamHost": "206.189.34.231:18002",
-            "upstreamPath": "/v1/query/async/dataset/f71cb368-7b74-41b9-acd0-d774661790d6",
-            "downstreamPath": "/v1/query/async/dataset/44017d7f-6745-4225-8eaf-12ebe706ef26"
-          },
-          "syncRestApi": true,
-          "syncRestApiConfig": {
-            "id": "c2851e28-0820-4966-a55a-aeb99449a812",
-            "name": "c2851e28-0820-4966-a55a-aeb99449a812",
-            "ownerId": "ca9fe20d-7581-4a5b-a00d-b2c34bd699d3",
-            "category": "free",
-            "marginPrice": 1,
-            "basePrice": 0,
-            "upstreamHost": "206.189.34.231:18002",
-            "upstreamPath": "/v1/query/sync/dataset/f71cb368-7b74-41b9-acd0-d774661790d6",
-            "downstreamPath": "/v1/query/sync/dataset/44017d7f-6745-4225-8eaf-12ebe706ef26"
-          },
-          "webSocketApi": false,
-          "webSocketApiConfig": null
-        },
-        "scheduledJob": {
-          "dataIntegrationMetaTypes": "MAIN_DATA_META",
-          "jobEventType": "CREATE",
-          "dataFlowId": {
-            "datasetId": "f71cb368-7b74-41b9-acd0-d774661790d6",
-            "sourceName": "UNDEFINED",
-            "version": 1,
-            "timestamp": 1536218302030
-          },
-          "period": 1,
-          "periodUnit": "HOUR",
-          "nextRun": "2018-09-06T08:18:22.030+0000",
-          "lastRun": null,
-          "lastRunStatus": "SUCCESS",
           "lastRunDetail": null,
           "autoUpdate": true
         },
