@@ -1,7 +1,7 @@
 const Algorithm = require('../models/algo');
 const MachineLearning = require('../helpers/algorithm/machineLearning');
 const { dtypes } = require('../helpers/algorithm/transformator');
-const { test, model, dataset, output } = require('../helpers/algorithm/test');
+const { test, model, dataset, output, modeltes } = require('../helpers/algorithm/test');
 
 module.exports = {
   algorithm: async (req, res) => {
@@ -47,7 +47,8 @@ module.exports = {
         dataset,
         test,
         model,
-        dtypes
+        dtypes,
+        modeltes
       })
     } catch (error) {
       res.status(500).json({
@@ -162,8 +163,8 @@ module.exports = {
       res.status(200).json({
         composer_id : "<composer_id>",
         running_id : "<running_id>",
-        status : "DONE",
-        read_status: "ada",
+        status : "FAIL",
+        read_status: "None",
         modelData_id : "<modelData_id>",
         last_stage : "fit"          
       })

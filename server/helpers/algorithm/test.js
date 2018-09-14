@@ -678,5 +678,394 @@ module.exports = {
         }
       ]
     }
+  ],
+  modeltes: [
+    {
+      "fit_id": "94271c6e-b385-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b5c06-b1a6-11e8-92cc-b8e85634cd2c', '109b5c58-b1a6-11e8-adb4-b8e85634cd2c'], 'parents_user_id_model': ['109b5ca6-b1a6-11e8-b142-b8e85634cd2c', '109b5cec-b1a6-11e8-bb40-b8e85634cd2c'], 'parents_model_id': ['109b5d3a-b1a6-11e8-bde7-b8e85634cd2c', '109b5d82-b1a6-11e8-a592-b8e85634cd2c'], 'parents_user_id_data': ['109b5dd2-b1a6-11e8-8586-b8e85634cd2c', '109b5e18-b1a6-11e8-aaf1-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b5c06-b1a6-11e8-92cc-b8e85634cd2c",
+        "109b5c58-b1a6-11e8-adb4-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b5d3a-b1a6-11e8-bde7-b8e85634cd2c",
+        "109b5d82-b1a6-11e8-a592-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b5dd2-b1a6-11e8-8586-b8e85634cd2c",
+        "109b5e18-b1a6-11e8-aaf1-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b5ca6-b1a6-11e8-b142-b8e85634cd2c",
+        "109b5cec-b1a6-11e8-bb40-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "fitting",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536424698431",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "235cd862-b1a6-11e8-9e92-b8e85634cd2c",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b5c06-b1a6-11e8-92cc-b8e85634cd2c', '109b5c58-b1a6-11e8-adb4-b8e85634cd2c'], 'parents_user_id_model': ['109b5ca6-b1a6-11e8-b142-b8e85634cd2c', '109b5cec-b1a6-11e8-bb40-b8e85634cd2c'], 'parents_model_id': ['109b5d3a-b1a6-11e8-bde7-b8e85634cd2c', '109b5d82-b1a6-11e8-a592-b8e85634cd2c'], 'parents_user_id_data': ['109b5dd2-b1a6-11e8-8586-b8e85634cd2c', '109b5e18-b1a6-11e8-aaf1-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "IN PROGRESS",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": 0,
+      "metric_performance": null,
+      "model_id_output": "235cdae2-b1a6-11e8-a84e-b8e85634cd2c",
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b5c06-b1a6-11e8-92cc-b8e85634cd2c",
+        "109b5c58-b1a6-11e8-adb4-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b5d3a-b1a6-11e8-bde7-b8e85634cd2c",
+        "109b5d82-b1a6-11e8-a592-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b5dd2-b1a6-11e8-8586-b8e85634cd2c",
+        "109b5e18-b1a6-11e8-aaf1-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b5ca6-b1a6-11e8-b142-b8e85634cd2c",
+        "109b5cec-b1a6-11e8-bb40-b8e85634cd2c"
+      ],
+      "path_model_output": "",
+      "pipeline_group_name": "fitting",
+      "running_time": 0,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "2597a448-b1a6-11e8-be55-b8e85634cd2c",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {'HashingTF': {'numFeatures': [10, 100, 1000]}, 'LogisticRegression': {'regParam': [0.1, 0.01]}}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b60f4-b1a6-11e8-884c-b8e85634cd2c', '109b6142-b1a6-11e8-a00b-b8e85634cd2c'], 'parents_user_id_model': ['109b6188-b1a6-11e8-84cd-b8e85634cd2c', '109b61d8-b1a6-11e8-a520-b8e85634cd2c'], 'parents_model_id': ['109b621e-b1a6-11e8-9373-b8e85634cd2c', '109b6264-b1a6-11e8-b75d-b8e85634cd2c'], 'parents_user_id_data': ['109b62a8-b1a6-11e8-b40e-b8e85634cd2c', '109b62fa-b1a6-11e8-85c7-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "IN PROGRESS",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": 0,
+      "metric_performance": null,
+      "model_id_output": "2597a970-b1a6-11e8-9dfc-b8e85634cd2c",
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b60f4-b1a6-11e8-884c-b8e85634cd2c",
+        "109b6142-b1a6-11e8-a00b-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b621e-b1a6-11e8-9373-b8e85634cd2c",
+        "109b6264-b1a6-11e8-b75d-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b62a8-b1a6-11e8-b40e-b8e85634cd2c",
+        "109b62fa-b1a6-11e8-85c7-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6188-b1a6-11e8-84cd-b8e85634cd2c",
+        "109b61d8-b1a6-11e8-a520-b8e85634cd2c"
+      ],
+      "path_model_output": "",
+      "pipeline_group_name": "fitting",
+      "running_time": 0,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "1c9d7886-b4a3-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'PipelineModel': {'path': 'hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/result_TEST35'}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/training'], 'action': {'None': ''}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'transformer', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b65ca-b1a6-11e8-9e63-b8e85634cd2c', '109b6624-b1a6-11e8-a91c-b8e85634cd2c'], 'parents_user_id_model': ['109b6668-b1a6-11e8-97ef-b8e85634cd2c', '109b66b0-b1a6-11e8-9c71-b8e85634cd2c'], 'parents_model_id': ['109b66f6-b1a6-11e8-9ddc-b8e85634cd2c', '109b6746-b1a6-11e8-88d8-b8e85634cd2c'], 'parents_user_id_data': ['109b678c-b1a6-11e8-a2da-b8e85634cd2c', '109b67d2-b1a6-11e8-9988-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b65ca-b1a6-11e8-9e63-b8e85634cd2c",
+        "109b6624-b1a6-11e8-a91c-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b66f6-b1a6-11e8-9ddc-b8e85634cd2c",
+        "109b6746-b1a6-11e8-88d8-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b678c-b1a6-11e8-a2da-b8e85634cd2c",
+        "109b67d2-b1a6-11e8-9988-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6668-b1a6-11e8-97ef-b8e85634cd2c",
+        "109b66b0-b1a6-11e8-9c71-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "transformer",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536547333669",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "94b2113e-b385-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {'HashingTF': {'numFeatures': [10, 100, 1000]}, 'LogisticRegression': {'regParam': [0.1, 0.01]}}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b60f4-b1a6-11e8-884c-b8e85634cd2c', '109b6142-b1a6-11e8-a00b-b8e85634cd2c'], 'parents_user_id_model': ['109b6188-b1a6-11e8-84cd-b8e85634cd2c', '109b61d8-b1a6-11e8-a520-b8e85634cd2c'], 'parents_model_id': ['109b621e-b1a6-11e8-9373-b8e85634cd2c', '109b6264-b1a6-11e8-b75d-b8e85634cd2c'], 'parents_user_id_data': ['109b62a8-b1a6-11e8-b40e-b8e85634cd2c', '109b62fa-b1a6-11e8-85c7-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b60f4-b1a6-11e8-884c-b8e85634cd2c",
+        "109b6142-b1a6-11e8-a00b-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b621e-b1a6-11e8-9373-b8e85634cd2c",
+        "109b6264-b1a6-11e8-b75d-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b62a8-b1a6-11e8-b40e-b8e85634cd2c",
+        "109b62fa-b1a6-11e8-85c7-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6188-b1a6-11e8-84cd-b8e85634cd2c",
+        "109b61d8-b1a6-11e8-a520-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "fitting",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536424698431",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "26b32ee2-b1a6-11e8-aa15-b8e85634cd2c",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'PipelineModel': {'path': 'hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/result_TEST35'}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/training'], 'action': {'None': ''}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'transformer', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b65ca-b1a6-11e8-9e63-b8e85634cd2c', '109b6624-b1a6-11e8-a91c-b8e85634cd2c'], 'parents_user_id_model': ['109b6668-b1a6-11e8-97ef-b8e85634cd2c', '109b66b0-b1a6-11e8-9c71-b8e85634cd2c'], 'parents_model_id': ['109b66f6-b1a6-11e8-9ddc-b8e85634cd2c', '109b6746-b1a6-11e8-88d8-b8e85634cd2c'], 'parents_user_id_data': ['109b678c-b1a6-11e8-a2da-b8e85634cd2c', '109b67d2-b1a6-11e8-9988-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "IN PROGRESS",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": 0,
+      "metric_performance": null,
+      "model_id_output": "26b33180-b1a6-11e8-b584-b8e85634cd2c",
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b65ca-b1a6-11e8-9e63-b8e85634cd2c",
+        "109b6624-b1a6-11e8-a91c-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b66f6-b1a6-11e8-9ddc-b8e85634cd2c",
+        "109b6746-b1a6-11e8-88d8-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b678c-b1a6-11e8-a2da-b8e85634cd2c",
+        "109b67d2-b1a6-11e8-9988-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6668-b1a6-11e8-97ef-b8e85634cd2c",
+        "109b66b0-b1a6-11e8-9c71-b8e85634cd2c"
+      ],
+      "path_model_output": "",
+      "pipeline_group_name": "transformer",
+      "running_time": 0,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "1c4e5eae-b4a3-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {'HashingTF': {'numFeatures': [10, 100, 1000]}, 'LogisticRegression': {'regParam': [0.1, 0.01]}}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b60f4-b1a6-11e8-884c-b8e85634cd2c', '109b6142-b1a6-11e8-a00b-b8e85634cd2c'], 'parents_user_id_model': ['109b6188-b1a6-11e8-84cd-b8e85634cd2c', '109b61d8-b1a6-11e8-a520-b8e85634cd2c'], 'parents_model_id': ['109b621e-b1a6-11e8-9373-b8e85634cd2c', '109b6264-b1a6-11e8-b75d-b8e85634cd2c'], 'parents_user_id_data': ['109b62a8-b1a6-11e8-b40e-b8e85634cd2c', '109b62fa-b1a6-11e8-85c7-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b60f4-b1a6-11e8-884c-b8e85634cd2c",
+        "109b6142-b1a6-11e8-a00b-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b621e-b1a6-11e8-9373-b8e85634cd2c",
+        "109b6264-b1a6-11e8-b75d-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b62a8-b1a6-11e8-b40e-b8e85634cd2c",
+        "109b62fa-b1a6-11e8-85c7-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6188-b1a6-11e8-84cd-b8e85634cd2c",
+        "109b61d8-b1a6-11e8-a520-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "fitting",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536547333669",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "1ba4fa08-b4a3-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'Tokenizer': {'inputCol': 'text', 'outputCol': 'words'}}, {'HashingTF': {'inputCol': 'words', 'outputCol': 'features', 'numFeatures': 20}}, {'LogisticRegression': {'maxIter': 10}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/data/user_id/cv_tvs_data_example'], 'action': {'None': ''}}, 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'fitting', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b5c06-b1a6-11e8-92cc-b8e85634cd2c', '109b5c58-b1a6-11e8-adb4-b8e85634cd2c'], 'parents_user_id_model': ['109b5ca6-b1a6-11e8-b142-b8e85634cd2c', '109b5cec-b1a6-11e8-bb40-b8e85634cd2c'], 'parents_model_id': ['109b5d3a-b1a6-11e8-bde7-b8e85634cd2c', '109b5d82-b1a6-11e8-a592-b8e85634cd2c'], 'parents_user_id_data': ['109b5dd2-b1a6-11e8-8586-b8e85634cd2c', '109b5e18-b1a6-11e8-aaf1-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b5c06-b1a6-11e8-92cc-b8e85634cd2c",
+        "109b5c58-b1a6-11e8-adb4-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b5d3a-b1a6-11e8-bde7-b8e85634cd2c",
+        "109b5d82-b1a6-11e8-a592-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b5dd2-b1a6-11e8-8586-b8e85634cd2c",
+        "109b5e18-b1a6-11e8-aaf1-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b5ca6-b1a6-11e8-b142-b8e85634cd2c",
+        "109b5cec-b1a6-11e8-bb40-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "fitting",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536547333669",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    },
+    {
+      "fit_id": "952618f4-b385-11e8-8aef-ee23b0afcc00",
+      "algorithm_configuration": "{'last_stage': 'fit', 'type': 'CrossValidator', 'estimator': [{'PipelineModel': {'path': 'hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/result_TEST35'}}], 'evaluator': {'name': 'BinaryClassificationEvaluator', 'params': {'metricName': 'areaUnderROC'}}, 'estimatorParamMaps': {'ParamGridBuilder': {}}, 'data': {'path': ['hdfs://159.89.198.183:9001/test/ml_studio/model/user_id/training'], 'action': {'None': ''}}, 'trainRatio': 0.8, 'numFolds': 3, 'output_col': 'all', 'user_id': '109b5762-b1a6-11e8-a74d-b8e85634cd2c', 'date': '2018-05-05 00:00:00.000+0000', 'username': 'USERNAME7', 'pipeline_group_name': 'transformer', 'composer_id': 'ac53b8f4-b067-11e8-abd7-90cdb697eae3', 'parents_data_id': ['109b65ca-b1a6-11e8-9e63-b8e85634cd2c', '109b6624-b1a6-11e8-a91c-b8e85634cd2c'], 'parents_user_id_model': ['109b6668-b1a6-11e8-97ef-b8e85634cd2c', '109b66b0-b1a6-11e8-9c71-b8e85634cd2c'], 'parents_model_id': ['109b66f6-b1a6-11e8-9ddc-b8e85634cd2c', '109b6746-b1a6-11e8-88d8-b8e85634cd2c'], 'parents_user_id_data': ['109b678c-b1a6-11e8-a2da-b8e85634cd2c', '109b67d2-b1a6-11e8-9988-b8e85634cd2c']}",
+      "composer_id": "ac53b8f4-b067-11e8-abd7-90cdb697eae3",
+      "date": "2018-05-05 00:00:00.000+0000",
+      "fit_status": "FAIL",
+      "input_col": ['tes', 'teslagi', 'testerus'],
+      "memory_consumed": null,
+      "metric_performance": null,
+      "model_id_output": null,
+      "output_col": ['tes', 'teslagi', 'testerus'],
+      "params": null,
+      "parents_data_id": [
+        "109b65ca-b1a6-11e8-9e63-b8e85634cd2c",
+        "109b6624-b1a6-11e8-a91c-b8e85634cd2c"
+      ],
+      "parents_data_price": null,
+      "parents_model_id": [
+        "109b66f6-b1a6-11e8-9ddc-b8e85634cd2c",
+        "109b6746-b1a6-11e8-88d8-b8e85634cd2c"
+      ],
+      "parents_model_price": null,
+      "parents_user_id_data": [
+        "109b678c-b1a6-11e8-a2da-b8e85634cd2c",
+        "109b67d2-b1a6-11e8-9988-b8e85634cd2c"
+      ],
+      "parents_user_id_model": [
+        "109b6668-b1a6-11e8-97ef-b8e85634cd2c",
+        "109b66b0-b1a6-11e8-9c71-b8e85634cd2c"
+      ],
+      "path_model_output": null,
+      "pipeline_group_name": "transformer",
+      "running_time": null,
+      "schema_data_output_input": null,
+      "schema_data_output_output": null,
+      "size_data_input": null,
+      "spark_job_id": "local-1536424698431",
+      "user_id": "109b5762-b1a6-11e8-a74d-b8e85634cd2c",
+      "username": "USERNAME7",
+      "pricing": {
+        "minimum_price": 0
+      }
+    }
   ]
 }
